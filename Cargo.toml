@@ -1,0 +1,21 @@
+[package]
+edition = "2021"
+name = "docker-rs"
+description = "Docker Remote API in Rust"
+version = "0.1.0"
+authors = ["mtb0x1 <39337159+mtb0x1@users.noreply.github.com>"]
+license = "Apache-2.0"
+homepage = "https://github.com/mtb0x1/docker-rs"
+repository = "https://github.com/mtb0x1/docker-rs"
+documentation = "https://github.com/mtb0x1/docker-rs"
+readme = "README.md"
+keywords = ["docker"]
+
+[dependencies]
+serde = {version = "1.0.189", default-features = false}
+serde_derive = {version = "1.0.189", default-features = false}
+serde_json = {version = "1.0.107", default-features = false, features=["std"]}
+hyper = {version = "0.14.27", default-features = false}
+hyperlocal = {version= "0.8.0", default-features = false, features=["client"]}
+futures = {version = "0.3.28", default-features = false}
+tokio = {version = "1.33.0", default-features = false}
